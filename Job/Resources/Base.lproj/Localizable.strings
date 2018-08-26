@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  Job
+
+  Created by Oleg Shupulin on 15.08.2018.
+  Copyright © 2018 Oleg Shupulin. All rights reserved.
+*/
+
+//error
+"error_unknown_loczlized_description" = "Что то пошло не так, попробуйте повторить позднее";
+"error_parse_loczlized_description" = "Не удалось обработать ответ сервера";
+
+//vacanciesList
+"vacancies_list_title" = "Вакансии";
+"vacancies_list_no_data_placeholder" = "По вашему запросу\nничего не найдено";
+"vacancies_list_error_placeholder" = "Что то пошло не так\n:(";

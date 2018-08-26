@@ -8,22 +8,88 @@
 
 /* Begin PBXBuildFile section */
 		EF08377921228620003A5FF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF08377821228620003A5FF6 /* AppDelegate.swift */; };
-		EF08377B21228620003A5FF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF08377A21228620003A5FF6 /* ViewController.swift */; };
-		EF08377E21228620003A5FF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF08377C21228620003A5FF6 /* Main.storyboard */; };
-		EF08378121228620003A5FF6 /* Job.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF08377F21228620003A5FF6 /* Job.xcdatamodeld */; };
 		EF08378321228622003A5FF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF08378221228622003A5FF6 /* Assets.xcassets */; };
 		EF08378621228622003A5FF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF08378421228622003A5FF6 /* LaunchScreen.storyboard */; };
+		EF08379121228C59003A5FF6 /* RequestSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF08379021228C59003A5FF6 /* RequestSender.swift */; };
+		EF08379321228D81003A5FF6 /* RequestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF08379221228D81003A5FF6 /* RequestConfig.swift */; };
+		EF083795212353E7003A5FF6 /* RequestsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF083794212353E7003A5FF6 /* RequestsFactory.swift */; };
+		EF08379721235FEA003A5FF6 /* CustomErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF08379621235FEA003A5FF6 /* CustomErrorType.swift */; };
+		EF08379D2123E3C5003A5FF6 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF08379C2123E3C5003A5FF6 /* String+Localized.swift */; };
+		EF0837A2212B3EBB003A5FF6 /* VacanciesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837A1212B3EBB003A5FF6 /* VacanciesRequest.swift */; };
+		EF0837A5212B4043003A5FF6 /* VacanciesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837A4212B4043003A5FF6 /* VacanciesParser.swift */; };
+		EF0837A8212B438A003A5FF6 /* Vacancy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837A7212B438A003A5FF6 /* Vacancy.swift */; };
+		EF0837AA212B46A0003A5FF6 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837A9212B46A0003A5FF6 /* Area.swift */; };
+		EF0837AC212B46B6003A5FF6 /* Salary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837AB212B46B6003A5FF6 /* Salary.swift */; };
+		EF0837B0212B46E7003A5FF6 /* Employer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837AF212B46E7003A5FF6 /* Employer.swift */; };
+		EF0837B2212B49F7003A5FF6 /* IParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837B1212B49F7003A5FF6 /* IParser.swift */; };
+		EF0837B4212B4A14003A5FF6 /* IRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837B3212B4A14003A5FF6 /* IRequest.swift */; };
+		EF0837B9212BC33F003A5FF6 /* IBaseViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837B8212BC33F003A5FF6 /* IBaseViewInput.swift */; };
+		EF0837CE212BC6BE003A5FF6 /* VacanciesListModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837BC212BC6BD003A5FF6 /* VacanciesListModuleBuilder.swift */; };
+		EF0837CF212BC6BE003A5FF6 /* IVacanciesListModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837BE212BC6BD003A5FF6 /* IVacanciesListModuleInput.swift */; };
+		EF0837D0212BC6BE003A5FF6 /* VacanciesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837BF212BC6BD003A5FF6 /* VacanciesListPresenter.swift */; };
+		EF0837D1212BC6BE003A5FF6 /* IVacanciesListModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837C0212BC6BD003A5FF6 /* IVacanciesListModuleOutput.swift */; };
+		EF0837D2212BC6BE003A5FF6 /* VacanciesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837C2212BC6BD003A5FF6 /* VacanciesListViewController.swift */; };
+		EF0837D3212BC6BE003A5FF6 /* IVacanciesListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837C3212BC6BD003A5FF6 /* IVacanciesListViewInput.swift */; };
+		EF0837D5212BC6BE003A5FF6 /* IVacanciesListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837C5212BC6BD003A5FF6 /* IVacanciesListViewOutput.swift */; };
+		EF0837D6212BC6BE003A5FF6 /* IVacanciesListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837C7212BC6BD003A5FF6 /* IVacanciesListInteractorOutput.swift */; };
+		EF0837D7212BC6BE003A5FF6 /* VacanciesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837C8212BC6BD003A5FF6 /* VacanciesListInteractor.swift */; };
+		EF0837D8212BC6BE003A5FF6 /* IVacanciesListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837C9212BC6BD003A5FF6 /* IVacanciesListInteractorInput.swift */; };
+		EF0837D9212BC6BE003A5FF6 /* IVacanciesListRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837CB212BC6BD003A5FF6 /* IVacanciesListRouterInput.swift */; };
+		EF0837DA212BC6BE003A5FF6 /* VacanciesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837CC212BC6BD003A5FF6 /* VacanciesListRouter.swift */; };
+		EF0837DB212BC6BE003A5FF6 /* IVacanciesListTransitionHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837CD212BC6BD003A5FF6 /* IVacanciesListTransitionHandlerProtocol.swift */; };
+		EF0837E1212DDA57003A5FF6 /* VacanciesListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837E0212DDA57003A5FF6 /* VacanciesListTableViewCell.swift */; };
+		EF0837E3212DE325003A5FF6 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837E2212DE325003A5FF6 /* UITableView+Reusable.swift */; };
+		EF0837E5212DE38F003A5FF6 /* UIView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837E4212DE38F003A5FF6 /* UIView+Reusable.swift */; };
+		EF0837E8212F3F63003A5FF6 /* VacanciesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837E7212F3F63003A5FF6 /* VacanciesService.swift */; };
+		EF0837EA212FB9FF003A5FF6 /* LoaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837E9212FB9FF003A5FF6 /* LoaderFooterView.swift */; };
+		EF0837EC212FBFAC003A5FF6 /* VacanciesListDisplaDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837EB212FBFAC003A5FF6 /* VacanciesListDisplaDataFactory.swift */; };
+		EF0837EF212FC0B1003A5FF6 /* CurrencyNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837EE212FC0B1003A5FF6 /* CurrencyNumberFormatter.swift */; };
+		EF0837F021315861003A5FF6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF0837F221315861003A5FF6 /* Localizable.strings */; };
+		EF0837F721315B5D003A5FF6 /* PlaceholderTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0837F621315B5D003A5FF6 /* PlaceholderTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EF08377521228620003A5FF6 /* Job.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Job.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF08377821228620003A5FF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF08377A21228620003A5FF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EF08377D21228620003A5FF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EF08378021228620003A5FF6 /* Job.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Job.xcdatamodel; sourceTree = "<group>"; };
 		EF08378221228622003A5FF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF08378521228622003A5FF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF08378721228622003A5FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF08379021228C59003A5FF6 /* RequestSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSender.swift; sourceTree = "<group>"; };
+		EF08379221228D81003A5FF6 /* RequestConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConfig.swift; sourceTree = "<group>"; };
+		EF083794212353E7003A5FF6 /* RequestsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsFactory.swift; sourceTree = "<group>"; };
+		EF08379621235FEA003A5FF6 /* CustomErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomErrorType.swift; sourceTree = "<group>"; };
+		EF08379C2123E3C5003A5FF6 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		EF0837A1212B3EBB003A5FF6 /* VacanciesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacanciesRequest.swift; sourceTree = "<group>"; };
+		EF0837A4212B4043003A5FF6 /* VacanciesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacanciesParser.swift; sourceTree = "<group>"; };
+		EF0837A7212B438A003A5FF6 /* Vacancy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vacancy.swift; sourceTree = "<group>"; };
+		EF0837A9212B46A0003A5FF6 /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
+		EF0837AB212B46B6003A5FF6 /* Salary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salary.swift; sourceTree = "<group>"; };
+		EF0837AF212B46E7003A5FF6 /* Employer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employer.swift; sourceTree = "<group>"; };
+		EF0837B1212B49F7003A5FF6 /* IParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IParser.swift; sourceTree = "<group>"; };
+		EF0837B3212B4A14003A5FF6 /* IRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRequest.swift; sourceTree = "<group>"; };
+		EF0837B8212BC33F003A5FF6 /* IBaseViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBaseViewInput.swift; sourceTree = "<group>"; };
+		EF0837BC212BC6BD003A5FF6 /* VacanciesListModuleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacanciesListModuleBuilder.swift; sourceTree = "<group>"; };
+		EF0837BE212BC6BD003A5FF6 /* IVacanciesListModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IVacanciesListModuleInput.swift; sourceTree = "<group>"; };
+		EF0837BF212BC6BD003A5FF6 /* VacanciesListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacanciesListPresenter.swift; sourceTree = "<group>"; };
+		EF0837C0212BC6BD003A5FF6 /* IVacanciesListModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IVacanciesListModuleOutput.swift; sourceTree = "<group>"; };
+		EF0837C2212BC6BD003A5FF6 /* VacanciesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacanciesListViewController.swift; sourceTree = "<group>"; };
+		EF0837C3212BC6BD003A5FF6 /* IVacanciesListViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IVacanciesListViewInput.swift; sourceTree = "<group>"; };
+		EF0837C5212BC6BD003A5FF6 /* IVacanciesListViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IVacanciesListViewOutput.swift; sourceTree = "<group>"; };
+		EF0837C7212BC6BD003A5FF6 /* IVacanciesListInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IVacanciesListInteractorOutput.swift; sourceTree = "<group>"; };
+		EF0837C8212BC6BD003A5FF6 /* VacanciesListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacanciesListInteractor.swift; sourceTree = "<group>"; };
+		EF0837C9212BC6BD003A5FF6 /* IVacanciesListInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IVacanciesListInteractorInput.swift; sourceTree = "<group>"; };
+		EF0837CB212BC6BD003A5FF6 /* IVacanciesListRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IVacanciesListRouterInput.swift; sourceTree = "<group>"; };
+		EF0837CC212BC6BD003A5FF6 /* VacanciesListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacanciesListRouter.swift; sourceTree = "<group>"; };
+		EF0837CD212BC6BD003A5FF6 /* IVacanciesListTransitionHandlerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IVacanciesListTransitionHandlerProtocol.swift; sourceTree = "<group>"; };
+		EF0837E0212DDA57003A5FF6 /* VacanciesListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacanciesListTableViewCell.swift; sourceTree = "<group>"; };
+		EF0837E2212DE325003A5FF6 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		EF0837E4212DE38F003A5FF6 /* UIView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Reusable.swift"; sourceTree = "<group>"; };
+		EF0837E7212F3F63003A5FF6 /* VacanciesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacanciesService.swift; sourceTree = "<group>"; };
+		EF0837E9212FB9FF003A5FF6 /* LoaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderFooterView.swift; sourceTree = "<group>"; };
+		EF0837EB212FBFAC003A5FF6 /* VacanciesListDisplaDataFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacanciesListDisplaDataFactory.swift; sourceTree = "<group>"; };
+		EF0837EE212FC0B1003A5FF6 /* CurrencyNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyNumberFormatter.swift; sourceTree = "<group>"; };
+		EF0837F5213158AA003A5FF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EF0837F621315B5D003A5FF6 /* PlaceholderTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +122,184 @@
 		EF08377721228620003A5FF6 /* Job */ = {
 			isa = PBXGroup;
 			children = (
+				EF0837ED212FC097003A5FF6 /* Formatters */,
+				EF0837E6212F3F51003A5FF6 /* Services */,
+				EF0837DC212DD844003A5FF6 /* UIKit */,
+				EF0837B6212BC31A003A5FF6 /* Modules */,
+				EF08379B2123E2C0003A5FF6 /* Extensions */,
+				EF08379A2123DDF0003A5FF6 /* Resources */,
+				EF08378F21228C40003A5FF6 /* Network */,
 				EF08377821228620003A5FF6 /* AppDelegate.swift */,
-				EF08377A21228620003A5FF6 /* ViewController.swift */,
-				EF08377C21228620003A5FF6 /* Main.storyboard */,
-				EF08378221228622003A5FF6 /* Assets.xcassets */,
-				EF08378421228622003A5FF6 /* LaunchScreen.storyboard */,
 				EF08378721228622003A5FF6 /* Info.plist */,
-				EF08377F21228620003A5FF6 /* Job.xcdatamodeld */,
 			);
 			path = Job;
+			sourceTree = "<group>";
+		};
+		EF08378F21228C40003A5FF6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EF0837A6212B4375003A5FF6 /* CodableModels */,
+				EF0837A3212B3FE0003A5FF6 /* Parsers */,
+				EF0837A0212B3EA6003A5FF6 /* Requests */,
+				EF08379221228D81003A5FF6 /* RequestConfig.swift */,
+				EF08379021228C59003A5FF6 /* RequestSender.swift */,
+				EF083794212353E7003A5FF6 /* RequestsFactory.swift */,
+				EF08379621235FEA003A5FF6 /* CustomErrorType.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EF08379A2123DDF0003A5FF6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF0837F221315861003A5FF6 /* Localizable.strings */,
+				EF08378221228622003A5FF6 /* Assets.xcassets */,
+				EF08378421228622003A5FF6 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EF08379B2123E2C0003A5FF6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF08379C2123E3C5003A5FF6 /* String+Localized.swift */,
+				EF0837E2212DE325003A5FF6 /* UITableView+Reusable.swift */,
+				EF0837E4212DE38F003A5FF6 /* UIView+Reusable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EF0837A0212B3EA6003A5FF6 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				EF0837B3212B4A14003A5FF6 /* IRequest.swift */,
+				EF0837A1212B3EBB003A5FF6 /* VacanciesRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		EF0837A3212B3FE0003A5FF6 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				EF0837B1212B49F7003A5FF6 /* IParser.swift */,
+				EF0837A4212B4043003A5FF6 /* VacanciesParser.swift */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		EF0837A6212B4375003A5FF6 /* CodableModels */ = {
+			isa = PBXGroup;
+			children = (
+				EF0837A7212B438A003A5FF6 /* Vacancy.swift */,
+				EF0837A9212B46A0003A5FF6 /* Area.swift */,
+				EF0837AB212B46B6003A5FF6 /* Salary.swift */,
+				EF0837AF212B46E7003A5FF6 /* Employer.swift */,
+			);
+			path = CodableModels;
+			sourceTree = "<group>";
+		};
+		EF0837B6212BC31A003A5FF6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EF0837BB212BC6BD003A5FF6 /* VacanciesList */,
+				EF0837B7212BC325003A5FF6 /* Base */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EF0837B7212BC325003A5FF6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EF0837B8212BC33F003A5FF6 /* IBaseViewInput.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EF0837BB212BC6BD003A5FF6 /* VacanciesList */ = {
+			isa = PBXGroup;
+			children = (
+				EF0837BC212BC6BD003A5FF6 /* VacanciesListModuleBuilder.swift */,
+				EF0837BD212BC6BD003A5FF6 /* Presenter */,
+				EF0837C1212BC6BD003A5FF6 /* View */,
+				EF0837C6212BC6BD003A5FF6 /* Interactor */,
+				EF0837CA212BC6BD003A5FF6 /* Router */,
+			);
+			path = VacanciesList;
+			sourceTree = "<group>";
+		};
+		EF0837BD212BC6BD003A5FF6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EF0837BF212BC6BD003A5FF6 /* VacanciesListPresenter.swift */,
+				EF0837BE212BC6BD003A5FF6 /* IVacanciesListModuleInput.swift */,
+				EF0837C0212BC6BD003A5FF6 /* IVacanciesListModuleOutput.swift */,
+				EF0837EB212FBFAC003A5FF6 /* VacanciesListDisplaDataFactory.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EF0837C1212BC6BD003A5FF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EF0837C2212BC6BD003A5FF6 /* VacanciesListViewController.swift */,
+				EF0837C3212BC6BD003A5FF6 /* IVacanciesListViewInput.swift */,
+				EF0837C5212BC6BD003A5FF6 /* IVacanciesListViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF0837C6212BC6BD003A5FF6 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EF0837C7212BC6BD003A5FF6 /* IVacanciesListInteractorOutput.swift */,
+				EF0837C8212BC6BD003A5FF6 /* VacanciesListInteractor.swift */,
+				EF0837C9212BC6BD003A5FF6 /* IVacanciesListInteractorInput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EF0837CA212BC6BD003A5FF6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EF0837CB212BC6BD003A5FF6 /* IVacanciesListRouterInput.swift */,
+				EF0837CC212BC6BD003A5FF6 /* VacanciesListRouter.swift */,
+				EF0837CD212BC6BD003A5FF6 /* IVacanciesListTransitionHandlerProtocol.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EF0837DC212DD844003A5FF6 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				EF0837DD212DD853003A5FF6 /* VacanciesList */,
+				EF0837E9212FB9FF003A5FF6 /* LoaderFooterView.swift */,
+				EF0837F621315B5D003A5FF6 /* PlaceholderTableCell.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		EF0837DD212DD853003A5FF6 /* VacanciesList */ = {
+			isa = PBXGroup;
+			children = (
+				EF0837E0212DDA57003A5FF6 /* VacanciesListTableViewCell.swift */,
+			);
+			path = VacanciesList;
+			sourceTree = "<group>";
+		};
+		EF0837E6212F3F51003A5FF6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EF0837E7212F3F63003A5FF6 /* VacanciesService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EF0837ED212FC097003A5FF6 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				EF0837EE212FC0B1003A5FF6 /* CurrencyNumberFormatter.swift */,
+			);
+			path = Formatters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +344,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = EF08376C21228620003A5FF6;
 			productRefGroup = EF08377621228620003A5FF6 /* Products */;
@@ -126,8 +362,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF08378621228622003A5FF6 /* LaunchScreen.storyboard in Resources */,
+				EF0837F021315861003A5FF6 /* Localizable.strings in Resources */,
 				EF08378321228622003A5FF6 /* Assets.xcassets in Resources */,
-				EF08377E21228620003A5FF6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,29 +374,62 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF08377B21228620003A5FF6 /* ViewController.swift in Sources */,
-				EF08378121228620003A5FF6 /* Job.xcdatamodeld in Sources */,
+				EF0837A5212B4043003A5FF6 /* VacanciesParser.swift in Sources */,
+				EF08379321228D81003A5FF6 /* RequestConfig.swift in Sources */,
+				EF0837D5212BC6BE003A5FF6 /* IVacanciesListViewOutput.swift in Sources */,
+				EF0837B4212B4A14003A5FF6 /* IRequest.swift in Sources */,
+				EF0837CF212BC6BE003A5FF6 /* IVacanciesListModuleInput.swift in Sources */,
+				EF0837D0212BC6BE003A5FF6 /* VacanciesListPresenter.swift in Sources */,
+				EF0837A2212B3EBB003A5FF6 /* VacanciesRequest.swift in Sources */,
+				EF0837E8212F3F63003A5FF6 /* VacanciesService.swift in Sources */,
+				EF0837D9212BC6BE003A5FF6 /* IVacanciesListRouterInput.swift in Sources */,
+				EF0837D2212BC6BE003A5FF6 /* VacanciesListViewController.swift in Sources */,
+				EF0837B9212BC33F003A5FF6 /* IBaseViewInput.swift in Sources */,
+				EF0837EC212FBFAC003A5FF6 /* VacanciesListDisplaDataFactory.swift in Sources */,
+				EF0837CE212BC6BE003A5FF6 /* VacanciesListModuleBuilder.swift in Sources */,
+				EF08379D2123E3C5003A5FF6 /* String+Localized.swift in Sources */,
+				EF0837DB212BC6BE003A5FF6 /* IVacanciesListTransitionHandlerProtocol.swift in Sources */,
+				EF0837E1212DDA57003A5FF6 /* VacanciesListTableViewCell.swift in Sources */,
+				EF08379121228C59003A5FF6 /* RequestSender.swift in Sources */,
+				EF0837EA212FB9FF003A5FF6 /* LoaderFooterView.swift in Sources */,
+				EF0837E5212DE38F003A5FF6 /* UIView+Reusable.swift in Sources */,
+				EF08379721235FEA003A5FF6 /* CustomErrorType.swift in Sources */,
 				EF08377921228620003A5FF6 /* AppDelegate.swift in Sources */,
+				EF0837A8212B438A003A5FF6 /* Vacancy.swift in Sources */,
+				EF0837D7212BC6BE003A5FF6 /* VacanciesListInteractor.swift in Sources */,
+				EF0837E3212DE325003A5FF6 /* UITableView+Reusable.swift in Sources */,
+				EF0837F721315B5D003A5FF6 /* PlaceholderTableCell.swift in Sources */,
+				EF0837D6212BC6BE003A5FF6 /* IVacanciesListInteractorOutput.swift in Sources */,
+				EF0837AC212B46B6003A5FF6 /* Salary.swift in Sources */,
+				EF0837AA212B46A0003A5FF6 /* Area.swift in Sources */,
+				EF0837DA212BC6BE003A5FF6 /* VacanciesListRouter.swift in Sources */,
+				EF0837D8212BC6BE003A5FF6 /* IVacanciesListInteractorInput.swift in Sources */,
+				EF0837EF212FC0B1003A5FF6 /* CurrencyNumberFormatter.swift in Sources */,
+				EF0837D1212BC6BE003A5FF6 /* IVacanciesListModuleOutput.swift in Sources */,
+				EF0837B0212B46E7003A5FF6 /* Employer.swift in Sources */,
+				EF0837B2212B49F7003A5FF6 /* IParser.swift in Sources */,
+				EF0837D3212BC6BE003A5FF6 /* IVacanciesListViewInput.swift in Sources */,
+				EF083795212353E7003A5FF6 /* RequestsFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EF08377C21228620003A5FF6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EF08377D21228620003A5FF6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EF08378421228622003A5FF6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EF08378521228622003A5FF6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EF0837F221315861003A5FF6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF0837F5213158AA003A5FF6 /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -170,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -230,6 +500,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -284,6 +555,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HS76VV6WJD;
 				INFOPLIST_FILE = Job/Info.plist;
@@ -293,6 +565,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = oShip.Job;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,6 +575,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HS76VV6WJD;
 				INFOPLIST_FILE = Job/Info.plist;
@@ -311,6 +585,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = oShip.Job;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,19 +613,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		EF08377F21228620003A5FF6 /* Job.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				EF08378021228620003A5FF6 /* Job.xcdatamodel */,
-			);
-			currentVersion = EF08378021228620003A5FF6 /* Job.xcdatamodel */;
-			path = Job.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = EF08376D21228620003A5FF6 /* Project object */;
 }
