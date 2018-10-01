@@ -40,33 +40,6 @@ class VacanciesListInteractor {
 
 extension VacanciesListInteractor: IVacanciesListInteractorInput {
     
-//    func didRefreshVacancies(_ vacancies: [Vacancy])
-//    func didStartAditionalLoading()
-//    func didFinishAditionalLoading(_ vacancies: [Vacancy])
-//    func didRecceiveError(_ error: Error)
-	
-//    func refreshVacancies() {
-//        vacanciesService.getVacancies(forPage: 0,  withPerPage: Constants.vacanciesPerPage) { [weak self] result in
-//
-////            switch result {
-////            case .success(let vacancies):
-////
-////            case .failure(let error):
-////                self?.didRecceiveError(error)
-////            }
-//            self?.output.didRefreshVacancies(with: result)
-//        }
-//    }
-//    
-//    func additionaLoadVacancies() {
-//        guard !isLastPage else { return }
-//        output.didStartAditionalLoading()
-//        let nextPage = output.dataCount / Constants.vacanciesPerPage
-//        vacanciesService.getVacancies(forPage: nextPage, withPerPage: Constants.vacanciesPerPage) { [weak self] result in
-//            self?.output.didFinishAditionalLoading(with: result)
-//        }
-//    }
-    
     func refreshVacancies() {
         vacanciesService.getVacancies(forPage: 0,  withPerPage: Constants.vacanciesPerPage) { [weak self] result in
             guard let strongSelf = self else { return }

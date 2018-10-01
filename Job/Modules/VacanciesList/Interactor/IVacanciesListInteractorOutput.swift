@@ -12,13 +12,9 @@ protocol IVacanciesListInteractorOutput: AnyObject {
 
     var dataCount: Int { get }
     
-//    func didRefreshVacancies(with result: Result<[Vacancy]>)
-//    func didFinishAditionalLoading(with result: Result<[Vacancy]>)
-    
     func didRefreshVacancies(_ vacancies: [Vacancy])
     
     func didStartAditionalLoading()
     func didFinishAditionalLoading(_ vacancies: [Vacancy])
-    
     func didRecceiveError(_ error: Error)
 }
